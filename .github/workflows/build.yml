@@ -18,8 +18,8 @@ jobs:
 
     - name: Install dependencies
       run: |
-        pip install -r requirements.txt
-
+        pip install pandas gspread oauth2client chardet openpyxl pyinstaller
+        
     - name: Build exe
       run: |
         pyinstaller --onefile --noconsole app.py
